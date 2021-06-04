@@ -18,10 +18,10 @@ class AppTest {
         String stringOne = "10";
         String stringTwo = "5";
 
-        int add = 15;
-        int subtract = 5;
-        int multiply = 50;
-        int divide = 2;
+        int add = 10 + 5;
+        int subtract = 10 - 5;
+        int multiply = 10 * 5;
+        int divide = 10 / 5;
 
         String expectedOutput = """
                 10 + 5 = 15
