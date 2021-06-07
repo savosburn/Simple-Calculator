@@ -13,24 +13,28 @@ public class App {
     public static void main(String[] args) {
         App myApp = new App();
 
+        // Input
         String numOne = myApp.stringOne();
         String numTwo = myApp.stringTwo();
 
+        // Convert to numbers
         int newNumOne = Integer.parseInt(numOne);
         int newNumTwo = Integer.parseInt(numTwo);
 
+        // Calculations
         int add = myApp.addition(newNumOne, newNumTwo);
         int subtract = myApp.subtraction(newNumOne, newNumTwo);
         int multiply = myApp.multiplication(newNumOne, newNumTwo);
         int divide = myApp.division(newNumOne, newNumTwo);
 
+        // Output
         String generateOutput = myApp.concatenation(numOne, numTwo, add, subtract, multiply, divide);
-
         myApp.output(generateOutput);
     }
 
     public String stringOne() {
         System.out.print("What is your first number? ");
+
         return in.nextLine();
     }
 
